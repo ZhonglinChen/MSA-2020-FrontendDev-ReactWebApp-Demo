@@ -11,7 +11,7 @@ pool:
 
 
 variables:
-  rootDir: 'MSA-2020-Phase1-FrontEndDev-ReactWebApp-TutorialDemo'
+  rootDir: 'my-app'
   buildDir: '$(rootDir)/build'
 
 steps:
@@ -22,7 +22,7 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      [[ -d $(rootDir)]] mkdir $(rootDir)
+      [[ -d $(rootDir)]] || mkdir $(rootDir)
       cd $(rootDir)
       npm install
       npm run build
