@@ -29,7 +29,7 @@ steps:
       # echo "b2 `ls -l`"
       npm install
       npm run build
-      # echo "b3 `ls -l`"
+      echo "b3 `ls -l`"
       # cd ..
       # echo "b4 `ls -l`"
     displayName: 'npm install and build'   
