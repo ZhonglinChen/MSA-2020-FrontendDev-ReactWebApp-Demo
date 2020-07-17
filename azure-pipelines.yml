@@ -11,7 +11,7 @@ pool:
 
 
 variables:
-  rootDir: 'my-app'
+  rootDir: 'MSA-2020-Phase1-FrontEndDev-ReactWebApp-TutorialDemo'
   buildDir: '$(rootDir)/build'
 
 steps:
