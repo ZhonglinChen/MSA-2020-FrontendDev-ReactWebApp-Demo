@@ -22,7 +22,7 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      [[ -d $(rootDir)]] || mkdir $(rootDir)
+      [[ -d $(rootDir) ]] || mkdir $(rootDir)
       cd $(rootDir)
       npm install
       npm run build
