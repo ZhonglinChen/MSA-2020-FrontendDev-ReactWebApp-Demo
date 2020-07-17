@@ -23,10 +23,12 @@ steps:
 
   - script: |
       [[ -d $(rootDir) ]] || mkdir $(rootDir)
+      echo "b1 `ls -l`"
       cd $(rootDir)
+      echo "b2 `ls -l`"
       npm install
       npm run build
-      echo "`ls -l`"
+      echo "b3 `ls -l`"
       cd ..
     displayName: 'npm install and build'   
  
