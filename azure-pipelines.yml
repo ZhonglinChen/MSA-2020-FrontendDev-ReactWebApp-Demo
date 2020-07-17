@@ -27,6 +27,8 @@ steps:
       # echo "b1 `ls -l`"
       # cd $(rootDir)
       # echo "b2 `ls -l`"
+      cd src
+      echo "b2 `ls -l`"
       npm install
       npm run build
       echo "b3 `ls -l`"
