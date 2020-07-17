@@ -16,7 +16,7 @@ steps:
       versionSpec: '10.x'
     displayName: 'Install Node.js'
 
-  - script:
+  - script: |
       cd $(rootDir)
       npm install
       npm run build
