@@ -11,8 +11,8 @@ pool:
 
 
 variables:
-  rootDir: 'my-app'
-  buildDir: '$(rootDir)/build'
+  # rootDir: 'my-app'
+  buildDir: 'build'
 
 steps:
   
@@ -22,16 +22,16 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      echo "`pwd`"
-      [[ -d $(rootDir) ]] || mkdir $(rootDir)
-      echo "b1 `ls -l`"
-      cd $(rootDir)
-      echo "b2 `ls -l`"
+      # echo "`pwd`"
+      # [[ -d $(rootDir) ]] || mkdir $(rootDir)
+      # echo "b1 `ls -l`"
+      # cd $(rootDir)
+      # echo "b2 `ls -l`"
       npm install
       npm run build
-      echo "b3 `ls -l`"
-      cd ..
-      echo "b4 `ls -l`"
+      # echo "b3 `ls -l`"
+      # cd ..
+      # echo "b4 `ls -l`"
     displayName: 'npm install and build'   
  
   - task: ArchiveFiles@2
