@@ -11,9 +11,9 @@ pool:
 
 steps:
   -task:NodeTool@0
-    input:
+    inputs:
       versionSpec:'10.x'
-    displayName:'Install Node.js'
+      displayName:'Install Node.js'
 
   -script:
       cd $(rootDir)
@@ -21,6 +21,7 @@ steps:
       npm run build
       cd ..
     displayName: 'npm install and build'   
+ 
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(buildDir)'
