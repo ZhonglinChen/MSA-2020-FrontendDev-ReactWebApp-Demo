@@ -26,7 +26,7 @@ steps:
       cd $(rootDir)
       npm install
       npm run build
-      echo "ls -l"
+      echo "`ls -l`"
       cd ..
     displayName: 'npm install and build'   
  
